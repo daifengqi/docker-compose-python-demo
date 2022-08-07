@@ -6,4 +6,4 @@ def writeRelatively(path: str, content: str):
         f.write(content)
 
 if __name__ == "__main__":
-    writeRelatively('data/test.txt', 'Hello Github Action!')
+    writeRelatively('data/test.txt', 'Hello docker-compose!')

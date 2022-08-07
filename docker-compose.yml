@@ -4,11 +4,11 @@ services:
     container_name: python-env
     build: .
     volumes:
-      - textdata:/usr/app/data
+      - data:/usr/app/data
 volumes:
-  textdata:
+  data:
     driver: local
     driver_opts:
       type: "none"
       o: "bind"
-      device: "./data"
+      device: "./src/data"
