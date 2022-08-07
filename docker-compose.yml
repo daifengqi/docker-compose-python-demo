@@ -1,0 +1,14 @@
+version: "3"
+services:
+  python:
+    container_name: python-env
+    build: .
+    volumes:
+      - textdata:/usr/app/data
+volumes:
+  textdata:
+    driver: local
+    driver_opts:
+      type: "none"
+      o: "bind"
+      device: "./data"

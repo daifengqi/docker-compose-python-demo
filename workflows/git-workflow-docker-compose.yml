@@ -1,0 +1,11 @@
+name:
+  docker-compose-actions-workflow
+on:
+  workflow_dispatch
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build the stack
+        run: docker-compose up -d
